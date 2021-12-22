@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="head">
+      <!-- Header top navigation -->
+      <div class="head-top">
+        <img src="images/logo.svg" alt="company logo" class="head-top__logo" />
+
+        <div class="head-top__nav-box">
+          <div class="head-nav__wrapper">
+            <div class="head-nav">
+              <button class="head-nav__btn">
+                Product
+
+                <picture>
+                  <source
+                    media="(max-width: 750px)"
+                    srcset="images/icon-arrow-dark.svg"
+                  />
+
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow down"
+                    class="head-nav__img"
+                  />
+                </picture>
+              </button>
+
+              <ul class="head-nav__list">
+                <div class="head-nav__list-wrapper">
+                  <li class="head-nav__list-item">Overview</li>
+                  <li class="head-nav__list-item">Pricing</li>
+                  <li class="head-nav__list-item">Marketplace</li>
+                  <li class="head-nav__list-item">Features</li>
+                  <li class="head-nav__list-item">Integrations</li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="head-nav">
+              <button class="head-nav__btn">
+                Company
+                <picture>
+                  <source
+                    media="(max-width: 750px)"
+                    srcset="images/icon-arrow-dark.svg"
+                  />
+
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow down"
+                    class="head-nav__img"
+                  />
+                </picture>
+              </button>
+
+              <ul class="head-nav__list">
+                <div class="head-nav__list-wrapper">
+                  <li class="head-nav__list-item">About</li>
+                  <li class="head-nav__list-item">Team</li>
+                  <li class="head-nav__list-item">Blog</li>
+                  <li class="head-nav__list-item">Careers</li>
+                </div>
+              </ul>
+            </div>
+
+            <div class="head-nav">
+              <button class="head-nav__btn">
+                Connect
+                <picture>
+                  <source
+                    media="(max-width: 750px)"
+                    srcset="images/icon-arrow-dark.svg"
+                  />
+
+                  <img
+                    src="images/icon-arrow-light.svg"
+                    alt="arrow down"
+                    class="head-nav__img"
+                  />
+                </picture>
+              </button>
+
+              <ul class="head-nav__list">
+                <div class="head-nav__list-wrapper">
+                  <li class="head-nav__list-item">Contact</li>
+                  <li class="head-nav__list-item">Newsletter</li>
+                  <li class="head-nav__list-item">Linkedin</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="head-top__btns">
+            <button class="head-top__btn head-top__btn--light">Login</button>
+            <button class="head-top__btn head-top__btn--white">Sign Up</button>
+          </div>
+        </div>
+
+        <button class="head-top__menu-btn">
+          <img
+            src="images/icon-hamburger.svg"
+            alt="hamburger image"
+            class="head-top__menu-img"
+          />
+        </button>
+      </div>
+
+      <!-- Header bottom content -->
+
+      <div class="head-bot">
+        <h1 class="head-bot__heading">A modern publishing platform</h1>
+        <p class="head-bot__txt">
+          Grow your audience and build your online brand
+        </p>
+        <div class="head-bot__btns">
+          <button class="head-bot__btn head-bot__btn--white">
+            Start For Free
+          </button>
+          <button class="head-bot__btn head-bot__btn--light">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+
+    <main class="main">
+      <!-- Section--1 -->
+      <section class="sec sec-future">
+        <h2 class="sec-heading">Designed for the future</h2>
+        <div class="sec-box sec-future-box">
+          <div class="sec-box__con">
+            <h3 class="sec-box__con-heading">
+              Introducing an extensible editor
+            </h3>
+            <p class="sec-box__con-txt">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="sec-box__con">
+            <h3 class="sec-box__con-heading">Robust content management</h3>
+            <p class="sec-box__con-txt">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+
+        <picture class="sec-box__img">
+          <source
+            media="(max-width: 1000px)"
+            srcset="images/illustration-editor-mobile.svg"
+          />
+
+          <img
+            src="images/illustration-editor-desktop.svg"
+            alt=""
+            class="sec-box__img"
+          />
+        </picture>
+      </section>
+
+      <!-- Section--2 -->
+      <section class="sec sec-art">
+        <img src="images/illustration-phones.svg" alt="" class="sec-art__img" />
+
+        <div class="sec-art__con">
+          <h2 class="sec-art__con-heading">State of the Art Infastructure</h2>
+          <p class="sec-art__con-txt">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section--3 -->
+      <section class="sec sec-free">
+        <picture>
+          <source
+            media="(max-width: 1000px)"
+            srcset="images/illustration-laptop-mobile.svg"
+          />
+
+          <img
+            src="images/illustration-laptop-desktop.svg"
+            alt=""
+            class="sec-free__box-img"
+          />
+        </picture>
+        <div class="sec-free__box">
+          <div class="sec-free__box-con">
+            <h3 class="sec-free__box-con-heading">Free, open, simple</h3>
+            <p class="sec-free__box-con-txt">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div class="sec-free__box-con">
+            <h3 class="sec-free__box-con-heading">Powerful tooling</h3>
+            <p class="sec-free__box-con-txt">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section--footer -->
+    <footer class="foot">
+      <img src="images/logo.svg" alt="company logo" class="foot-logo" />
+
+      <div class="foot-box">
+        <h4 class="foot-box__heading">Product</h4>
+        <ul class="foot-box__nav">
+          <li class="foot-box__nav-list">Overview</li>
+          <li class="foot-box__nav-list">Pricing</li>
+          <li class="foot-box__nav-list">Marketplace</li>
+          <li class="foot-box__nav-list">Features</li>
+          <li class="foot-box__nav-list">Integrgations</li>
+        </ul>
+      </div>
+
+      <div class="foot-box">
+        <h4 class="foot-box__heading">Company</h4>
+
+        <ul class="foot-box__nav">
+          <li class="foot-box__nav-list">About</li>
+          <li class="foot-box__nav-list">Team</li>
+          <li class="foot-box__nav-list">Blog</li>
+          <li class="foot-box__nav-list">Careers</li>
+        </ul>
+      </div>
+
+      <div class="foot-box">
+        <h4 class="foot-box__heading">Connect</h4>
+        <ul class="foot-box__nav">
+          <li class="foot-box__nav-list">Contact</li>
+          <li class="foot-box__nav-list">Newsletter</li>
+          <li class="foot-box__nav-list">LinkedIn</li>
+        </ul>
+      </div>
+
+      <!-- Attribution -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">venkatesh.b</a>.
+      </div>
+    </footer>
+  </body>
+</html>
